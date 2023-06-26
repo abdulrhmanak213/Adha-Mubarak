@@ -163,7 +163,7 @@
     font-size: x-large;
     color: #2f3745;
 }
-@media (max-width: 1000px) { /* Adjust the max-width to your desired breakpoint */
+@media (max-width: 760px) { /* Adjust the max-width to your desired breakpoint */
     .text-container {
         /* align-items: center; */
         /* padding: 0; */
