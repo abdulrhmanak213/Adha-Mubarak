@@ -175,8 +175,8 @@
     .medium-text {
         /* font-weight: 500; Adjust the value as needed */
     position: absolute;
-    bottom: 70.5%;
-    left: 55.9%;
+   /* bottom: 70.5%;*/
+    left: 50%;
     margin: 0;
     }
 }
