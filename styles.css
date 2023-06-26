@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.wrapper{
+    background-color: #2f3745;
+    height: 100vh
+}
+.main-photo {
+    width: 100%;
+    height: 80vh;
+    margin-top: 50px 
+}
+#top-object {
+    z-index: -1
+}
+#frist-cloud{
+    animation: fristcloud 90s ease-in-out  alternate-reverse infinite;
+    transform: translateX(-220px) ;
+}
+#second-cloud {
+    animation: secondcloud 90s ease-in-out  alternate-reverse infinite;
+    transform: translateX(220px) ;
+}
+#three-cloud,
+#four-cloud{
+    display: none
+}
+#moon{
+    animation: moon 5s ease-in-out  alternate-reverse infinite;
+}
+#astar,
+#sstar,
+#dstar,
+#fstar,
+#gstar{
+    animation: star 0.9s ease-in-out  alternate-reverse infinite;
+
+}
+#qstar,
+#wstar,
+#estar,
+#rstar,
+#tstar,
+#ystar,
+#ustar{
+    animation: star 0.9s ease-in-out  alternate-reverse infinite;
+    animation-delay: 0.5s;
+}
+#Eid{
+    transform: translateY(100px);
+}
+#Eid-word{
+  animation: eid 0.9s ease-in-out  alternate-reverse infinite;  
+}
+#mobark-word{
+  animation: eid 0.9s ease-in-out  alternate-reverse infinite; 
+  animation-delay: 0.8s;
+}
+@keyframes star{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+@keyframes eid{
+    from{
+        opacity:0.4;        
+    }
+    to{
+        opacity:1;
+        
+    }
+}
+ @keyframes fristcloud {
+  0%, 50%, 100% {
+    transform: translateX(-230px) ;
+  }
+   30%,80% {
+    transform: translateX(220px)  ;
+  }
+}
+@keyframes secondcloud {
+  0%, 50%, 100% {
+    transform: translateX(230px) ;
+  }
+   30%,80% {
+    transform: translateX(-220px)  ;
+    }
+}
+ @keyframes moon {
+     from{
+        transform:  rotate(2deg)
+        }
+        to{
+       transform:  rotate(20deg)
+        }
+}
+@import "compass/css3";
+@font-face {
+    font-family: 'ReemKufi';
+    src: url('ReemKufi-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'ReemKufi';
+    src: url('ReemKufi-Medium.ttf') format('truetype');
+    font-weight: 500; /* Adjust the value as needed */
+}
+
+@font-face {
+    font-family: 'ReemKufi';
+    src: url('ReemKufi-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'ReemKufi';
+    src: url('ReemKufi-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* Adjust the value as needed */
+}
+.bold-text {
+    font-weight: bold;
+    font-size: 95px;
+    position: absolute;
+    /* bottom: 5%; */
+    /* left: 5%;     */
+    margin: 0;
+}
+
+.medium-text {
+    font-weight: 500; /* Adjust the value as needed */
+    position: absolute;
+    bottom: 13.5%;
+    left: 51%;
+    margin: 0;
+}
+
+.regular-text {
+    font-weight: normal;
+}
+
+.semibold-text {
+    font-weight: 600; /* Adjust the value as needed */
+}
+
+.text-container {
+    font-family: 'ReemKufi', Arial, sans-serif; /* Use the chosen font family name here */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: left; */
+    /* align-items: flex-end; */
+    /* height: 80vh; */
+    /* margin: 0; */
+    /* padding-left: 75%; */
+    /* bottom: 50%; */
+    font-size: x-large;
+    color: #2f3745;
+}
+@media (max-width: 1000px) { /* Adjust the max-width to your desired breakpoint */
+    .text-container {
+        /* align-items: center; */
+        /* padding: 0; */
+        /* text-align: center; */
+        font-size: xx-large;
+
+        
+    }
+    .medium-text {
+        /* font-weight: 500; Adjust the value as needed */
+    position: absolute;
+    bottom: 31.5%;
+    left: 55.9%;
+    margin: 0;
+    }
+}
